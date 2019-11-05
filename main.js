@@ -12,7 +12,7 @@ function nextMove(square) {
         square.innerText = document.turn;
         switchPlayer();
     } else {
-        showMessage("Spot is taken, pick another one!")
+        alert("Too bad, this one is taken. Pick another spot!")
     }
 }
 
