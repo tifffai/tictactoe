@@ -5,29 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow|Roboto:300,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Archivo+Narrow|Roboto:300,400, 500&display=swap" rel="stylesheet">
     <title>Tic Tac Toe Game</title>
 </head>
 
-<body>
-    <h1>Tick Tack Toe</h1>
+<body onload="startGame()">
+    <h1>Tic Tac Toe</h1>
+    <p id="message"></p></br>
     <table>
         <tr>
-            <td>x</td>
-            <td class="v-line">o</td>
-            <td>x</td>
+            <td class="square" onClick="nextMove(this)"></td>
+            <td class="square v-line" onClick="nextMove(this)"></td>
+            <td class="square" onClick="nextMove(this)"></td>
         </tr>
         <tr>
-            <td class="h-line">x</td>
-            <td class="v-line h-line">o</td>
-            <td class="h-line">x</td>
+            <td class="square h-line" onClick="nextMove(this)"></td>
+            <td class="square v-line h-line" onClick="nextMove(this)"></td>
+            <td class="h-line" onClick="nextMove(this)"></td>
         </tr>
         <tr>
-            <td>x</td>
-            <td class="v-line">o</td>
-            <td>x</td>
+            <td class="square" onClick="nextMove(this)"></td>
+            <td class="square v-line" onClick="nextMove(this)"></td>
+            <td class="square" onClick="nextMove(this)"></td>
         </tr>
     </table>
-</body>
 
+    <script src="main.js"></script>
+</body>
 </html>

@@ -1,19 +1,29 @@
 body {
-    background-color: #F2B5A7;
+    background-color: #284B59;
     color: #fff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    font-size: 5em;
+    font-weight: 500;
 }
 
 h1 {
     font-family: 'Archivo Black', sans-serif;
+    font-size: 6em;
+    text-transform: uppercase;
+    color: #D9A78B;
+}
+
+p {
     font-size: 1.5em;
+    font-weight: 300;
+    
 }
 
 table {
     margin: 0 auto;
     border-collapse: collapse;
+    color: #fff;
+    font-size: 5em;
 }
 
 td {
@@ -21,12 +31,14 @@ td {
     width: 2em;
 }
 
+
+
 .v-line {
-    border-left: 5px solid #fff;
-    border-right: 5px solid #fff;
+    border-left: 8px solid #F2E3B6;
+    border-right: 8px solid #F2E3B6;
 }
 
 .h-line {
-    border-top: 5px solid #fff;
-    border-bottom: 5px solid #fff;
+    border-top: 8px solid #F2E3B6;
+    border-bottom: 8px solid #F2E3B6;
 }
