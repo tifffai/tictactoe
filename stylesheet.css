@@ -16,7 +16,6 @@ h1 {
 p {
     font-size: 1.5em;
     font-weight: 300;
-    
 }
 
 table {
@@ -32,7 +31,6 @@ td {
 }
 
 
-
 .v-line {
     border-left: 8px solid #F2E3B6;
     border-right: 8px solid #F2E3B6;
@@ -42,3 +40,19 @@ td {
     border-top: 8px solid #F2E3B6;
     border-bottom: 8px solid #F2E3B6;
 }
+
+
+a {
+    margin-top: 2em;
+    color: #D9A78B;
+    font-weight: 400;
+    text-decoration: none;
+    transition: font-size .2s;
+}
+
+a:hover {
+    text-decoration: underline overline;
+    color: #fff;
+    font-size: 2em;
+}
+
