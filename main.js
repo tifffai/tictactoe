@@ -7,6 +7,7 @@ function showMessage(msg) {
     document.getElementById("message").innerText = msg;
 }
 
+
 function nextMove(square) {
     if(square.innerText == '') {
         square.innerText = document.turn;
@@ -17,13 +18,16 @@ function nextMove(square) {
 }
 
 function switchPlayer() {
-    if(document.turn == "X") {
+    if(checkWinner(document.turn)) {
+        showMessage("👑  Congrats! Player " + document.turn + " you won! 👑 ")
+    } else if(document.turn == "X") {
         document.turn = "O"
+        showMessage("Player " + document.turn + ", play your turn");
     } else {
         document.turn = "X"
+        showMessage("Player " + document.turn + ", play your turn");
     };
 
-    showMessage("Player " + document.turn + ", play your turn");
 }
 
 function checkWinner(move) {
